@@ -2,6 +2,7 @@
     margin: 0; 
     padding: 0;
     
+    
 }
 
 p{
@@ -25,9 +26,14 @@ menu li {
     
 }
 .borda-img {
-    border: 35px #4FD67D ;display:block;margin: 0 auto;border-style: groove;}
+    border: 35px #4FD67D ;
+    display:block;
+    margin: 0 auto;
+    border-style: groove;}
+
 figcaption{
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .texto-h1{
@@ -37,7 +43,7 @@ figcaption{
 
 }
 main{
-    padding: 45px;
+    padding: 60px;
     width: 50%;
     display: block;
     margin: auto;
@@ -45,6 +51,7 @@ main{
     background-color: rgb(186, 242, 215);
     border-radius: 4px;
     margin-top: 60px;
+    font-family: Verdana;
 
 
 }
@@ -77,6 +84,17 @@ main{
     
 
     
+}
+h2{
+    margin-bottom: 20px;
+    margin-top: 40px;
+    color:rgb(54, 240, 190);
+    text-shadow: 
+               -2px -2px 0px rgb(37, 141, 113), 
+               -2px 2px 0px rgb(37, 141, 113),                   
+                2px -2px 0px rgb(37, 141, 113),                 
+                2px 0px 0px rgb(37, 141, 113);
+
 }
 .espacoinicial{
     text-indent: 20px;
