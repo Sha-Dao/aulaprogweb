@@ -10,6 +10,7 @@ p{
     text-align: justify;
     text-indent: 20px;
     margin-bottom: 10px;
+
 }
 
 menu li {
@@ -63,6 +64,7 @@ main{
 .imagem-capa{
     display: block;
     margin: auto;
+    width: 53% ;
 }
 .menu{
     list-style: none;
