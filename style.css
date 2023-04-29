@@ -44,7 +44,7 @@ figcaption{
 
 }
 main{
-    padding: 60px;
+    padding: 70px;
     width: 50%;
     height: auto;
     display: block;
@@ -56,31 +56,41 @@ main{
 
 
 }
-.fundo-capa{
-    width: 100%;
-    background-color: #4FD67D;
-    align-items: center;
+
+header{
+    height: 120px;
+    background-image: linear-gradient(#a4eabb, #059052);
+    display: flex;
+
 
 }
-.imagem-capa{
-    display: block;
-    margin: auto;
-    width: 53% ;
+
+.texto-header{
+    font-family: Cambria;
+    font-size: 50px;
+    
+    font-weight: bold;
+    color: white;
+    margin: auto
+
+
+
+
 }
 .menu{
     list-style: none;
     float: left;
     width: 100%;
-    background-color:#059052;
+    background-color:#05512f;
     display: flex;
     justify-content: center;
     
     
 }
 .menu li{
+    font-family: Cambria;
     position:relative;
     float:left;
-    background-color:#067442;
     font-size: larger;
     font-weight: bolder;
     
@@ -91,8 +101,8 @@ main{
     border: 2px solid;
     border-radius: 20px;
     margin-top: 30px;
-     display: block;
-     margin: auto;
+    display: block;
+    margin: auto;
 
 }
 h2{
@@ -102,14 +112,18 @@ h2{
     background-image: linear-gradient(to right, #118f56,transparent);
     border-radius: 1px;
 }
+blockquote{
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #118f56;
+}
 .espacoinicial{
     text-indent: 20px;
 }
-.not{
-    border:0px;
-}
+
 .menu li a{
-    color:#8AF1D8;
+    color:#fff;
     text-decoration:none; 
     padding:5px ; 
     display:block;
@@ -117,15 +131,17 @@ h2{
 .menu li a:hover{
     background: #059052;
     color:#4FD67D;
-    -moz-box-shadow:0 3px 10px 0 #CCC;
-    -webkit-box-shadow:0 3px 10px 0 #ccc;
-    text-shadow:0px 0px 5px #fff;
+    
+}
+aside{
+    width: 100%;
+    overflow: hidden;
 }
 .menu li  ul{
     position:absolute;
     top:25px;
     left:0;
-    background-color:#fff;
+    background-color:#059052;
     display:none;
 }
 .menu li:hover ul, .menu li.over ul{
@@ -137,6 +153,17 @@ h2{
     display:block;
     width:150px;
     font-size: medium;
+}
+
+table,  tr, td{
+    margin: auto;
+    margin-top:50px;
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 3px;
+    text-overflow: clip;
+
 }
 footer{
     
