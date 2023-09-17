@@ -1,0 +1,4 @@
+endereco = input('Digite seu endereço IP aqui: ')
+
+for i in range(len(endereco)):
+    print (i)

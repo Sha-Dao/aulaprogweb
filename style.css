@@ -4,13 +4,21 @@
     
     
 }
-
+body{
+    overflow-x: hidden;
+}
 p{
 
     text-align: justify;
     text-indent: 20px;
     margin-bottom: 10px;
+    font-size: 18px;
+    font-family: Imprima;
 
+}
+h2{
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 menu li {
@@ -24,6 +32,7 @@ menu li {
     color: white;
     font-family: Verdana;
     margin: 0px;
+    position: fixed;
     
 }
 .borda-img {
@@ -43,75 +52,138 @@ figcaption{
     top: 25%;
 
 }
+
 main{
+    width: 100%;
+    height: 100%;
+    background-color: #CCD8C9;
+     display: inline-flex;
+   
+ }
+
+.conteudosite{
+    margin-top: 50px;
+    margin-bottom: 50px;
     padding: 70px;
     width: 50%;
     height: auto;
     display: block;
-    margin: auto;
+    margin-left: 2%;
     justify-content: center;
-    background-color: rgb(186, 242, 215);
-    border-radius: 4px;
-    margin-top: 60px;
-
-
-}
-
-header{
-    height: 120px;
-    background-image: linear-gradient(#a4eabb, #059052);
-    display: flex;
-
+    background-color: #c4eaa8;
+    border-radius: 10px;
+    z-index: 2; /* Z-index do main (maior do que o cabeçalho e a imagem) */
 
 }
 
-.texto-header{
-    font-family: Cambria;
-    font-size: 50px;
+.curiosidades{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 5%;
+    margin-right: 2%;
+    width: 30%;
+    background-color: white;
+    border-radius: 10px;
+    height: auto;
+    padding: 50px;
+    padding-top: 70px;
+    justify-content: center;
     
+
+}
+.listacuriosidades{
+    font-size: 18px;
+    font-family: Imprima;
+}
+.listacuriosidades > li{
+    margin-bottom: 20px;
+}
+.listacuriosidades > li > span{
     font-weight: bold;
-    color: white;
-    margin: auto
-
-
+}
+header{
+    background: linear-gradient(91deg, #3E900C 23.76%, rgba(99, 156, 64, 0.97) 96.76%);
+    width: 100%;
+    height: 308px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
 
 
 }
+.texto-header{
+    text-align: center;
+    color: #FFF;
+    font-family: Imprima;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+.container1{
+    display: inline-flex;
+}
+
+
+
+
+.texto-header, .imagem-ao-lado > img{
+ 
+ 
+   top: 10%;
+   width: 130px;
+}
+
 .menu{
+    position: relative;
     list-style: none;
     float: left;
     width: 100%;
-    background-color:#05512f;
-    display: flex;
-    justify-content: center;
-    
-    
+    background: #2F5E13;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+    height: 57px;
 }
+
 .menu li{
-    font-family: Cambria;
+   
     position:relative;
     float:left;
-    font-size: larger;
-    font-weight: bolder;
+    color: #FFF;
+    font-family: Imprima;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    left: 12%;
+    display: flex;
+    margin-left: 2%;
+    top: 20%;
     
 
     
 }
+nav > .menu li > img{
+    position: relative;
+    height: 90%;
+    top: 50%;
+    
+
+}
+
 .imagem-conteudo{
     border: 2px solid;
     border-radius: 20px;
     margin-top: 30px;
     display: block;
     margin: auto;
+    width:50%;
+    height: auto;
 
 }
-h2{
-    margin-bottom: 20px;
-    margin-top: 40px;
-    color: white;
-    background-image: linear-gradient(to right, #118f56,transparent);
-    border-radius: 1px;
-}
+
 blockquote{
     font-weight: bold;
     text-align: center;
@@ -127,18 +199,24 @@ blockquote{
     text-decoration:none; 
     padding:5px ; 
     display:block;
+    list-style: none;
 }
 .menu li a:hover{
-    background: #059052;
-    color:#4FD67D;
+    background: #066a3d;
+    color:white;
+    list-style: none;
+   
     
 }
+
 aside{
     width: 100%;
     overflow: hidden;
 }
 .menu li  ul{
     position:absolute;
+    list-style: none;
+    width: 116px;
     top:25px;
     left:0;
     background-color:#059052;
@@ -146,12 +224,12 @@ aside{
 }
 .menu li:hover ul, .menu li.over ul{
     display:block;
-
+    list-style: none;
 }
 .menu li ul li{
-    border:1px solid #c0c0c0;
+  
     display:block;
-    width:150px;
+    width:100px;
     font-size: medium;
 }
 
@@ -167,18 +245,25 @@ table,  tr, td{
 }
 footer{
     
-    height: 50px;
+    height:100px;
     width: 100%; 
     background-color:rgb(18, 198, 111);
     text-align: center;
-    position: relative;
-    margin-top: 50px;
+    position:absolute;
     left: 0;
+    margin-top: auto;
 
 }
 .footer-text{
     position: relative;
     bottom: 0;
+    font-size: 21pt;
+}
 
-    font-size: 21px;
+@media screen and (max-width: 768px) {
+
+    
+    
+
+    
 }
